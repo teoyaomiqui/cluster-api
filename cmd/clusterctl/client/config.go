@@ -262,7 +262,7 @@ func (c *clusterctlClient) getTemplateFromRepository(cluster cluster.Client, opt
 		return nil, err
 	}
 
-	repo, err := c.repositoryClientFactory(RepositoryClientFactoryInput{provider: providerConfig, processor: processor})
+	repo, err := c.repositoryClientFactory(RepositoryClientFactoryInput{Provider: providerConfig, Processor: processor})
 	if err != nil {
 		return nil, err
 	}
